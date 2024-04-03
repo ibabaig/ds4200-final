@@ -1,0 +1,20 @@
+html {
+    font-size: 12px;
+    font-family: 'Tinos', sans-serif;
+  }
+  
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  p, li {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #2b362b;
+  }
+  
+  html {
+    background-color: #a691a0;
+  }
