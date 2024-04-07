@@ -3,8 +3,8 @@
 <html lang="en-US">
 
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DS4200 Final</title>
     <link href="styles/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Tinos " rel="stylesheet" />
@@ -14,7 +14,7 @@
     <h1>DS4200 Final Project: MBTA Rail ridership</h1>
     <h2>By Melina Yang, Renee Reddy, Rhea Johnson, and Iba Baig</h2>
     
-    <img src="images/mbta.png" alt="MBTA rail map" />
+    <!-- <img src="images/mbta.png" alt="MBTA rail map" /> -->
 
      <p>Boston has been the birthplace of the public transit system in America, and the Massachusetts Bay Transportation Authority is used 
         by thousands of locals, students, and tourists every day. Our aim is to analyze the MBTA train system to provide more insight to the 
@@ -33,8 +33,16 @@
     <h2>Ridership Trends by Day Type for Different Routes</h2>
       <svg id="plot"></svg>
       <script src='https://d3js.org/d3.v7.min.js'></script>
-      <script src="scripts/main.js"></script>
+      <p> This is a D3 bar graph of the average flow of people on the different lines. This shows the popularity of each of the lines, with 
+        green line being the most popular and orange line being the least. This gives a better understanding of which line will generally be busier.</p>
 
+    <h2>Bubble Chart</h2>
+      <div id="bubble_chart"></div>
+      <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+      <script src="scripts/main.js"></script>
   </body>
 
 </html>
