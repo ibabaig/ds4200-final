@@ -14,7 +14,7 @@ const rail = d3.csv("data/mbta_ridership.csv", function(d) {
         left: 60 
     };
 
-    const width = 1400;
+    const width = 1250;
     const height = 800;
 
      const x = d3.scaleLinear()

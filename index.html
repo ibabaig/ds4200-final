@@ -13,9 +13,6 @@
   <body>
     <h1>DS4200 Final Project: MBTA Rail ridership</h1>
     <h2>By Melina Yang, Renee Reddy, Rhea Johnson, and Iba Baig</h2>
-    
-    <!-- <img src="images/mbta.png" alt="MBTA rail map" /> -->
-
      <p>Boston has been the birthplace of the public transit system in America, and the Massachusetts Bay Transportation Authority is used 
         by thousands of locals, students, and tourists every day. Our aim is to analyze the MBTA train system to provide more insight to the 
         riders on the functioning of a beneficial, yet sometimes unreliable, system. As students, we often rely on the MBTA to take us to 
@@ -25,22 +22,31 @@
         <a href="https://mbta-massdot.opendata.arcgis.com/datasets/9fea7862501f4c59ab2c001ad6ae19b0_0/explore">MBTA Public Rail Ridership dataset.</a> 
         It contains data for the seasons of Fall 2017, Fall 2018, and Fall 2019 with a total of 7,920 records.</p>
 
-    <h2>Network Graph of MBTA lines</h2>
+    <h2>Network Graph: Connecting the MBTA lines</h2>
         <img src="images/network_graph.png" alt="Network graph of MBTA routes" />
       <p> This is a network graph of the different routes of the MBTA. It shows all of the stops in the orange line, blue line, green line,
         and red line, colored by each respectively. Stops that are gray mean that more than one line connects to it.</p>
 
-    <h2>Ridership Trends by Day Type for Different Routes</h2>
+    <h2>D3 Bar Plot: Ridership Trends of Different Routes</h2>
       <svg id="plot"></svg>
       <script src='https://d3js.org/d3.v7.min.js'></script>
       <p> This is a D3 bar graph of the average flow of people on the different lines. This shows the popularity of each of the lines, with 
         green line being the most popular and orange line being the least. This gives a better understanding of which line will generally be busier.</p>
 
-    <h2>Bubble Chart</h2>
+    <h2>Heatmap: Time Periods and Riderships Frequency</h2>
+        <img src="images/heatmap_offs.png" alt="Total Passenger Offs throughout the day"/>
+        <img src="images/heatmap_ons.png" alt="Total Passenger Ons throughout the day"/>
+      <p>These are the ridership trends of people getting on/off the different lines throughout different time period of the day.</p>
+
+    <h2>Bubble Chart: Average Rider Flow of Routes</h2>
       <div id="bubble_chart"></div>
-      <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+        <iframe src="images/bubble_html.html" width="1000" height="650" frameborder="0"></iframe>
+      <p>An interactive bubble chart that demonstrates the average flow of people at different stops across the four lines.</p>
+
+    <h2>Interactive Bar Chart: </h2>
+      <div id="interactive_chart"></div>
+        <iframe src="images/interactive_chart.html" width="1100" height="400" frameborder="0"></iframe>
+      <p>An interactive bar chart that shows the total ons/offs across time periods of the day for different lines.</p>>
 
       <script src="scripts/main.js"></script>
   </body>

@@ -24,6 +24,8 @@ html {
     line-height: 2;
     letter-spacing: 1px;
     color: #2b362b;
+    text-align: center;
+    margin: 0 auto;
   }
   
   html {
@@ -31,7 +33,7 @@ html {
   }
   
   body {
-    width: 1500px;
+    width: 1400px;
     margin: 0 auto;
     background-color: #ffffff;
     padding: 0 20px 20px 20px;
@@ -43,16 +45,8 @@ html {
     margin: 0 auto;
     background-color: #4165bc;
   }
-  
-  body {
-    width: 1500px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
-  }
 
-  img {
-    display: block;
+  iframe {
+    display:block;
     margin: 0 auto;
   }
