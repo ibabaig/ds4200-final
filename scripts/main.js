@@ -1,3 +1,15 @@
+
+let myImage = document.getElementById('heatmap');
+
+myImage.onclick = function() {
+  let mySrc = myImage.getAttribute('src');
+  if(mySrc === 'images/heatmap_ons.png') {
+    myImage.setAttribute ('src','images/heatmap_offs.png');
+  } else {
+    myImage.setAttribute ('src','images/heatmap_ons.png');
+  }
+}
+
 const rail = d3.csv("data/mbta_ridership.csv", function(d) {
     return {
         route_name: d.route_name,
