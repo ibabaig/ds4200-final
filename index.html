@@ -61,9 +61,14 @@
     <h2>Interactive Bar Chart: </h2>
       <div id="interactive_chart"></div>
         <iframe src="images/interactive_chart.html" width="1100" height="400" frameborder="0"></iframe>
-      <p>An interactive bar chart that shows the total ons/offs across time periods of the day for different lines.</p>>
+      <p>An interactive bar chart that shows the total ons/offs across time periods of the day for different lines. It shows a stacked bar graph,
+        with each color represeting a different line. It also has shows an option to use an Altair selection tool, to select a specific line.
+        Once a lin is selected, such as Blue, Green, Orange, or Red, the user will only see a bar graph depciting the total ons and offs for that line.
+        The graph also utilizes Altair tooltip to allow a user to hover over the bars, to see the precise values. Through this visualization, 
+        a user can gain an undestanding off during which time periods, for which train lines, is the train most used. 
+      </p>>
 
       <script src="scripts/main.js"></script>
   </body>
-
+ 
 </html>
