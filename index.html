@@ -30,8 +30,10 @@
     <h2>D3 Bar Plot: Ridership Trends of Different Routes</h2>
       <svg id="plot"></svg>
       <script src='https://d3js.org/d3.v7.min.js'></script>
-      <p> This is a D3 bar graph of the average flow of people on the different lines. This shows the popularity of each of the lines, with 
-        green line being the most popular and orange line being the least. This gives a better understanding of which line will generally be busier.</p>
+      <p> This is a D3 bar graph of the average flow of people across each of the main MBTA lines – Green, Red, Blue, and Orange. 
+        Each bar represents a specific line, with the height of the bar corresponding to the average flow of passengers. This shows the popularity of each of the lines, with 
+        green line being the most popular and orange line being the least. Through this graph, it becomes evident that the Green Line stands out as the most frequented T line, 
+        showcasing its significant role in Boston's transit network. This gives a better understanding of which line will generally be busier.</p>
 
     <h2>Heatmap: Time Periods and Riderships Frequency</h2>
         <img id=heatmap src="images/heatmap_ons.png" alt="Total Passenger Ons throughout the day"/>
@@ -47,7 +49,14 @@
     <h2>Bubble Chart: Average Rider Flow of Routes</h2>
       <div id="bubble_chart"></div>
         <iframe src="images/bubble_html.html" width="1000" height="650" frameborder="0"></iframe>
-      <p>An interactive bubble chart that demonstrates the average flow of people at different stops across the four lines.</p>
+      <p>An interactive bubble chart that demonstrates the average flow of people at different stops across the four lines. 
+        Each bubble corresponds to a specific station, its size reflecting the average flow volume. To enhance clarity and comparison,
+        there is a color coded system, categorizing bubbles based on their respective route lines. 
+        Hovering over a bubble triggers an Altair tooltip, revealing details such as stop names, average flow rates,
+        and the associated route line, offering users deeper insights. A dropdown menu is also integrated, letting
+        users selectively display bubbles related to a chosen route line, which helps facilitate focused analysis.
+        Through this visualization, users can explore and understand the average flow patterns across MBTA stations.
+      </p>
 
     <h2>Interactive Bar Chart: </h2>
       <div id="interactive_chart"></div>
