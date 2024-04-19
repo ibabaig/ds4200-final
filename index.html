@@ -16,16 +16,21 @@
      <p>Boston has been the birthplace of the public transit system in America, and the Massachusetts Bay Transportation Authority is used 
         by thousands of locals, students, and tourists every day. Our aim is to analyze the MBTA train system to provide more insight to the 
         riders on the functioning of a beneficial, yet sometimes unreliable, system. As students, we often rely on the MBTA to take us to 
-        designated locations on time while being on schedule. We are using a dataset of rail ridership provided by the MBTA to understand the
-        behavior and needs of the riders, as well as the functioning of the trains themselves.The dataset is sourced from the Massachusetts Bay 
-        Transportation Authority:
+        designated locations on time while being on schedule.</p>
+      <p>The dataset is sourced from the Massachusetts Bay Transportation Authority. It details data regarding ridership for the light and heavy rails.
+        It also contains the average ridership for each of multiple attributes, such as season(Fall 2019), route/rail(Green), direction,
+        day type(Weekday), stop, and time period. It contains data for the seasons of Fall 2017, Fall 2018, and Fall 2019. It contains about 7, 920 records.
+        It examines the total ons and offs, the number of people boarding and unboarding for specific service days within the fields as well. There are some
+        notable issues that may have affected the data, such as track circuit issues,track servicing, and construction, which specifically affected the 
+        Red Line at Wollastons and the Orange Line at Forest Hills. This is the dataset sourced from the Massachusetts Bay Transportation Authority:
         <a href="https://mbta-massdot.opendata.arcgis.com/datasets/9fea7862501f4c59ab2c001ad6ae19b0_0/explore">MBTA Public Rail Ridership dataset.</a> 
-        It contains data for the seasons of Fall 2017, Fall 2018, and Fall 2019 with a total of 7,920 records.</p>
+      </p>
 
     <h2>Network Graph: Connecting the MBTA lines</h2>
         <img src="images/network_graph.png" alt="Network graph of MBTA routes" />
       <p> This is a network graph of the different routes of the MBTA. It shows all of the stops in the orange line, blue line, green line,
-        and red line, colored by each respectively. Stops that are gray mean that more than one line connects to it.</p>
+        and red line, colored by each respectively. Stops that are gray mean that more than one line connects to it, which demonstrates connections
+      or transfers a rider can take. By integrating a network graph organized by the kamada_kawai layout, it organizes the different lines and their stops.</p>
 
     <h2>D3 Bar Plot: Ridership Trends of Different Routes</h2>
       <svg id="plot"></svg>
@@ -91,9 +96,8 @@
           optimizing service frequency and reliability. Furthermore, by analyzing average flow data, we intend to identify areas of overcrowding and propose 
           strategic interventions such as additional trains, stops, or routes to alleviate congestion and enhance the commuter experience. Through our collaborative 
           efforts, we aspire to contribute to the continual improvement and efficiency of Boston's transit system, benefiting all commuters who rely on it daily.
-
         </p>
-    <h2>References</h2>
+      <h2>References to our Project:</h2>
       <p>
           <a href="https://www.sciencedirect.com/science/article/pii/S1077291X22001254">An Analysis of Commuter Rail Real-Time Information in Boston</a>
           <a href="https://journals.sagepub.com/doi/pdf/10.3141/2544-13">Rail Transit Ridership</a>
